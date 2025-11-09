@@ -5,9 +5,3 @@ body {
   overscroll-behavior: none;
   overflow: hidden;
 }
-
-nav {
-  position: relative;
-  top: 20px;
-  left: 20px;
-}

@@ -7,17 +7,19 @@
         <title>Case | Præhospital Patient Tilgang Simulering</title>
         <link rel="stylesheet" href="./css/main.css">
         <link rel="stylesheet" href="./css/case-main.css">
+        <link rel="stylesheet" href="./css/scenarioView.css">
     </head>
     <body>
-        <nav>
-            <!-- <h1 class="title">PPTS</h1> -->
-            <a href='./index.html'>
-                <img src="./img/PPTS_logo_raw_1.png" alt="logo" style="height: 35px;">
-            </a>
-        </nav>
         <main style="width: 100%;">
             <!-- Car display view -->
-            <div class="flex-center">
+            <!-- none | flex -->
+            <div id="carDisplayViewContainer" style="display: none;" class="flex-center">
+                <nav>
+                    <!-- <h1 class="title">PPTS</h1> -->
+                    <a href="./index.html">
+                        <img src="./img/PPTS_logo_raw_1.png" alt="logo" style="height: 35px;">
+                    </a>
+                </nav>
                 <div class="card" style="min-width: 300px; max-width: 500px;">
                     <div class="card-content">
                         <div class="content">
@@ -44,9 +46,100 @@
                         </div>
                     </div>
                 </div>
-                <button class="button is-link">Ankommet</button>
+                <button class="button is-link">Klar</button>
             </div>
             <!-- Car display view end -->
+            <!-- Scenario view -->
+            <div id="scenarioViewContainer" class="scenarioViewContainer">
+                <div class="scenarioViewNav">
+                    <img src="./img/PPTS_logo_raw_1.png" alt="logo" style="height: 35px;">
+                </div>
+                <div class="scenarioDashboardViewMain">
+                    <div class="scenarioDashboardLeftSideView">
+                        <div class="scenarioDashboardLeftSideTopView">
+                            <div class="vitalsBoxDisplayContainer">
+                                <div>
+                                    <div class="smallVitalsBoxDisplayContainer" style="color: rgb(6, 161, 0)">
+                                        <div class="smallVitalsBoxDisplayType">
+                                            HR
+                                        </div>
+                                        <div class="smallVitalsBoxDisplayValue">
+                                            76
+                                        </div>
+                                    </div>
+                                    <div class="smallVitalsBoxDisplayContainer" style="color: rgb(64, 112, 255);">
+                                        <div class="smallVitalsBoxDisplayType">
+                                            SpO<sub>2</sub>
+                                        </div>
+                                        <div class="smallVitalsBoxDisplayValue">
+                                            99%
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="smallVitalsBoxDisplayContainer" style="color: rgb(64, 112, 255);">
+                                        <div class="smallVitalsBoxDisplayType">
+                                            PR
+                                        </div>
+                                        <div class="smallVitalsBoxDisplayValue">
+                                            76
+                                        </div>
+                                    </div>
+                                    <div class="smallVitalsBoxDisplayContainer" style="color: rgb(255, 64, 64);">
+                                        <div class="smallVitalsBoxDisplayType">
+                                            NIBP
+                                        </div>
+                                        <div class="smallVitalsBoxDisplayValue">
+                                            120/80
+                                        </div>
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="smallVitalsBoxDisplayContainer" style="color: rgb(122, 86, 255);">
+                                        <div class="smallVitalsBoxDisplayType">
+                                            EtCO<sub>2</sub>
+                                        </div>
+                                        <div class="smallVitalsBoxDisplayValue">
+                                            4,6
+                                        </div>
+                                    </div>
+                                    <div class="smallVitalsBoxDisplayContainer" style="color: rgb(122, 86, 255);">
+                                        <div class="smallVitalsBoxDisplayType">
+                                            RR
+                                        </div>
+                                        <div class="smallVitalsBoxDisplayValue">
+                                            18
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scenarioDashboardLeftSideBottomView"></div>
+                        <!-- <div class="scenarioDashboardLeftSideTopView">
+                            <div>
+                                <div>
+                                    HF
+                                </div>
+                            </div>
+                            <div>
+                                SpCO<sub>2</sub>
+                            </div>
+                            <div class='scenarioDashboardLeftSideTopSubView'>
+                                <div>PR</div>
+                                <div>NIBT</div>
+                            </div>
+                            <div>EtCO<sub>2</sub></div>
+                        </div>
+                        <div class="scenarioDashboardLeftSideBottomView"></div> -->
+                    </div>
+                    <div></div>
+                    <div class="scenarioDashboardRightSideView">
+                        <div class="scenarioDashboardRightSideTopView"></div>
+                        <div class="scenarioDashboardRightSideBottomView"></div>
+                    </div>
+                </div>
+            </div>
+            <!-- Scenario view end -->
         </main>
     </body>
 </html>
